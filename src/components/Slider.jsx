@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import {dataSlider} from "../data.js";
 const Container = styled.div`
     with:100%;
-    height:100vh;
-    background-color: #ffc4b9;
+    height:80vh;
+    background-color: ${(props)=>props.direction===0 ? "#ffc4b9b3" : (props.direction === 1 ? "#c4effaa3" : "#ee4be94a")};
 
     display:flex;
 
@@ -37,14 +37,12 @@ const Container = styled.div`
     `;
     const WrapperSlider = styled.div`
         display:flex;
-        
         height:100%;
         transition: all 1.5s ease;
         transform: translateX(${(props)=>props.direction * -100}vw);
     `;
         const Slide = styled.div`
             width: 100vw;
-            height: 100vh;
             display:flex;
             ali-items:center;
         `;
@@ -108,7 +106,7 @@ const Slider = () => {
     }
 
     return (
-        <Container  >
+        <Container direction={direction} >
             <Arrow position="left" onClick={()=>onHandleClick("left")}>
                 <ArrowLeftOutlined style={{fontSize:"1.6rem"}} />
             </Arrow>

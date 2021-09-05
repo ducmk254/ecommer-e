@@ -10,6 +10,9 @@ const Container = styled.div`
     `
 const SalesTop = styled.div`
     background-color: #0b9888;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
     padding: 5px 0;
 
@@ -64,7 +67,7 @@ const Center = styled.div`
 `
     const Logo = styled.h1`
         font-weight: bold;
-        font-size: 2.4rem;
+        font-size: 4.4rem;
     `
 
 const Right = styled.div`
@@ -84,7 +87,7 @@ const NavBar = () => {
     return (
         <>
             <SalesTop>Super Deal! Free Shipping on Order Over $50</SalesTop>
-            <Container position="static">
+            <Container>
                 
                 <Wrapper>
                     <Left>
@@ -96,7 +99,7 @@ const NavBar = () => {
                         </SearchWrapper>
                     </Left>
                     <Center>
-                        <Logo>Mutosi Online.</Logo>
+                        <Logo>Kim Show&lsquo;s</Logo>
                     </Center>
                     <Right>
                         <Link alt="register">Register</Link>
