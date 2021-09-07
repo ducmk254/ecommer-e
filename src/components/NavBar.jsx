@@ -7,20 +7,7 @@ const Container = styled.div`
     // background-color:#dedede;
     
     font-size:1.4rem;
-    `
-const SalesTop = styled.div`
-    background-color: #0b9888;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    padding: 5px 0;
-
-    color: white;
-    text-align:center;
-    font-size: 1.2rem;
-    font-weight:200;
-`
+    `;
 const Wrapper = styled.div`
     width: 100%;
     height:100%;
@@ -80,13 +67,14 @@ const Right = styled.div`
     const Link = styled.a`
         text-transform:uppercase;
         margin: 0 10px;
+
+        cursor:pointer;
     `
 
 const NavBar = () => {
    const [language,setLanguage] = useState(true);
     return (
         <>
-            <SalesTop>Super Deal! Free Shipping on Order Over $50</SalesTop>
             <Container>
                 
                 <Wrapper>

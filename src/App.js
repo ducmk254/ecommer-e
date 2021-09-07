@@ -1,10 +1,15 @@
-
-import './App.css';
-import Home from './pages/Home';
+import "./App.css";
+import Carts from "./pages/Carts";
+import ProductDetails from "./pages/ProductDetails";
+// import Home from "./pages/Home";
+// import ProductList from "./pages/ProductList";
 
 function App() {
   return (
-    <Home/>
+    // <Home/>
+    // <ProductList />
+    // <ProductDetails />
+    <Carts />
   );
 }
 

@@ -18,10 +18,10 @@ const Title = styled.h2`
     text-transform: uppercase;
     padding:10px;
 `;
-const Products = () => {
+const Products = ({title}) => {
     return (
         <Container>
-            <Title>Sản phẩm nổi bật</Title>
+            <Title >{title}</Title>
            <Wrapper>
                  {
                     popularProducts.map(product=>(
